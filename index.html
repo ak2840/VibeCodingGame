@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深海釣魚遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">分數: <span id="score">0</span></div>
+            <div class="depth">深度: <span id="depth">0</span>m</div>
+            <div class="fish-count">已釣魚: <span id="fishCount">0</span></div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="controls">
+            <p>按住空白鍵下潛，放開空白鍵上浮</p>
+            <button id="startBtn">開始遊戲</button>
+            <button id="restartBtn" style="display: none;">重新開始</button>
+        </div>
+        
+        <div class="fish-info">
+            <h3>魚類圖鑑:</h3>
+            <div class="fish-list">
+                <div class="fish-item">
+                    <span class="fish-color" style="background: #FF6B6B;"></span>
+                    <span>小魚 (10分) - 0-50m</span>
+                </div>
+                <div class="fish-item">
+                    <span class="fish-color" style="background: #4ECDC4;"></span>
+                    <span>熱帶魚 (25分) - 50-150m</span>
+                </div>
+                <div class="fish-item">
+                    <span class="fish-color" style="background: #45B7D1;"></span>
+                    <span>金槍魚 (50分) - 100-300m</span>
+                </div>
+                <div class="fish-item">
+                    <span class="fish-color" style="background: #96CEB4;"></span>
+                    <span>鯊魚 (100分) - 200-400m</span>
+                </div>
+                <div class="fish-item">
+                    <span class="fish-color" style="background: #FFEAA7;"></span>
+                    <span>深海魚 (200分) - 300-500m</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html> 
