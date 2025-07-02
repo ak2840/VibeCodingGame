@@ -18,8 +18,16 @@
         
         <div class="controls">
             <p>按住空白鍵下潛，放開空白鍵上浮</p>
+            <p style="color: #FF4757; font-size: 14px;">⚠️ 注意：避開危險物品，越深越危險！遊戲時間30秒</p>
             <button id="startBtn">開始遊戲</button>
             <button id="restartBtn" style="display: none;">重新開始</button>
+            
+            <!-- 手機控制按鈕 -->
+            <div class="mobile-controls" style="margin-top: 20px; text-align: center;">
+                <button id="diveBtn" class="dive-button" style="display: none;">
+                    🎣 按住下潛
+                </button>
+            </div>
         </div>
         
         <div class="fish-info">
@@ -44,6 +52,26 @@
                 <div class="fish-item">
                     <span class="fish-color" style="background: #FFEAA7;"></span>
                     <span>深海魚 (200分) - 300-500m</span>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 20px; color: #FF4757;">⚠️ 危險物品:</h3>
+            <div class="fish-list">
+                <div class="fish-item" style="border-left: 3px solid #FF4757;">
+                    <span class="fish-color" style="background: #FF4757;"></span>
+                    <span>水雷 (-50分) - 100-400m</span>
+                </div>
+                <div class="fish-item" style="border-left: 3px solid #747D8C;">
+                    <span class="fish-color" style="background: #747D8C;"></span>
+                    <span>廢棄漁網 (-30分) - 50-300m</span>
+                </div>
+                <div class="fish-item" style="border-left: 3px solid #FFA502;">
+                    <span class="fish-color" style="background: #FFA502;"></span>
+                    <span>有毒水母 (-20分) - 0-200m</span>
+                </div>
+                <div class="fish-item" style="border-left: 3px solid #2F3542;">
+                    <span class="fish-color" style="background: #2F3542;"></span>
+                    <span>沉船碎片 (-40分) - 200-500m</span>
                 </div>
             </div>
         </div>

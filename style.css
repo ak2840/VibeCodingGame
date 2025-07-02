@@ -79,6 +79,45 @@ button:active {
     transform: translateY(0);
 }
 
+/* 手機控制按鈕樣式 */
+.dive-button {
+    background: linear-gradient(45deg, #e17055, #d63031) !important;
+    font-size: 18px !important;
+    padding: 20px 40px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 8px 25px rgba(225, 112, 85, 0.4) !important;
+    transition: all 0.2s ease !important;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.dive-button:active,
+.dive-button.pressed {
+    background: linear-gradient(45deg, #d63031, #e17055) !important;
+    transform: scale(0.95) !important;
+    box-shadow: 0 4px 15px rgba(225, 112, 85, 0.6) !important;
+}
+
+/* 手機適配 */
+@media (max-width: 768px) {
+    .mobile-controls {
+        display: block !important;
+    }
+    
+    .dive-button {
+        width: 80%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-controls {
+        display: none !important;
+    }
+}
+
 .fish-info {
     background: #f8f9fa;
     border-radius: 15px;
